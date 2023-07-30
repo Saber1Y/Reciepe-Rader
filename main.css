@@ -54,7 +54,8 @@
   font-size: 30px;
   line-height: 1.5;
 }
-.main-section {}
+.main-section {
+}
 .main-section_row p {
   font-family: "inter";
   /* line-height: 3.5; */
@@ -72,4 +73,29 @@
 .btnlf {
   background-color: var(--advance--color);
   color: var(--primary--color);
+}
+.secondary-row {
+  background-color: var(--primary--color);
+  text-align: center;
+  /* line-height: 2; */
+}
+.secondary-row h3 {
+  color: var(--advance--color);
+  font-family: "irish grover";
+  font-weight: 400;
+  font-size: 40px;
+  margin: 20px auto;
+}
+.secondary-row p {
+  color: var(--advance--color);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 30px 0;
+}
+.img-row img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 35px;
+  margin-bottom: 15px;
+  text-align: center;
 }
