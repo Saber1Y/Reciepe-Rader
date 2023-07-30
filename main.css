@@ -46,7 +46,7 @@
 .nav-bar span {
   color: var(--primary--color);
 }
-.main-section_row { 
+.main-section_row {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -92,7 +92,7 @@
 }
 .secondary-row h3 {
   color: var(--advance--color);
-  font-family: "irish grover";
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: 400;
   font-size: 40px;
   margin: 20px auto;
@@ -105,9 +105,10 @@
 }
 .img-row img {
   max-width: 100%;
-  height: auto;
+  /* width: 500%; */
   margin-right: 35px;
   margin-bottom: 15px;
   text-align: center;
   border: none;
+  cursor: pointer;
 }
