@@ -38,6 +38,10 @@
   text-decoration: none;
   color: var(--secondary--color);
   font-family: "DM Sans", sans-serif;
+  /* animation: showRight 1s ease forwards; */
+}
+.nav-bar li a:hover {
+  color: var(--primary--color);
 }
 .nav-bar span {
   color: var(--primary--color);
@@ -98,4 +102,5 @@
   margin-right: 35px;
   margin-bottom: 15px;
   text-align: center;
+  border: none;
 }
