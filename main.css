@@ -60,7 +60,7 @@
   font-family: "inter";
   /* line-height: 3.5; */
 }
-.btn {
+.btn { margin-top: 10px;
   width: 100px;
   height: 41px;
   border: 1px solid;
