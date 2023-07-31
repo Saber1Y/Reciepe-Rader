@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inika&family=Inter&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@
   color: var(--secondary--color);
   padding: 10px;
   margin: 0 100px;
+  /* background-color: #48d645; */
 }
 .nav-bar__container {
   display: flex;
@@ -103,6 +105,9 @@
   font-weight: 400;
   margin: 30px 0;
 }
+.img-row {
+  height: 150px;
+}
 .img-row img {
   max-width: 100%;
   /* width: 500%; */
@@ -111,4 +116,62 @@
   text-align: center;
   border: none;
   cursor: pointer;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  /* text-align: center; */
+  /* align-items: center; */
+  margin: 10% 0;
+}
+.hero-img {
+  /* width: 400px;
+  height: 100px; */
+}
+.hero-btn {
+  border: none;
+  background-color: #d9d9d9;
+  color: var(--primary--color);
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: "Segoe UI";
+  width: 180px;
+  height: 45px;
+  text-align: center;
+}
+.hero-btn:hover {
+  background-color: var(--primary--color);
+  color: var(--advance--color);
+}
+.hero-main h2 {
+  font-size: 63px;
+  color: var(--secondary--color);
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inika", serif;
+  font-family: "Inter", sans-serif;
+}
+.hero-main p {
+  font-family: "Segoe UI";
+  color: var(--secondary--color);
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.hero-btn__main {
+  border: 1px solid #48d645;
+  color: var(--advance--color);
+  text-align: center;
+  border-radius: 12px;
+  width: 170px;
+  height: 50px;
+  background-color: var(--primary--color);
+  margin: 20px 0;
+  font-family: "Segoe UI";
+}
+.hero-btn__main:hover {
+  border: 1px solid #d9d9d9;
+  background-color: #d9d9d9;
+  color: var(--primary--color);
 }
