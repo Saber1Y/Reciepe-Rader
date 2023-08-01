@@ -24,3 +24,24 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+  function submitForm(event) {
+    event.preventDefault();
+
+    const emailInput = document.getElementById("email");
+    const successMessage = document.getElementById("success-message");
+
+  
+    if (emailInput.value.trim() !== "") {
+  
+      successMessage.textContent = "Thank you for subscribing!";
+      successMessage.style.color = "#4CAF50";
+      emailInput.value = ""; 
+    } else {
+      
+      successMessage.textContent = "Please enter a valid email address.";
+      successMessage.style.color = "#FF0000";
+    }
+  }
+
+  const newsletterForm = document.getElementById("newsletter-form");
+  newsletterForm.addEventListener("submit", submitForm);
