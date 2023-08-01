@@ -45,3 +45,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const newsletterForm = document.getElementById("newsletter-form");
   newsletterForm.addEventListener("submit", submitForm);
+   
+
+//   var scrollButton = document.querySelector('arrow-icon');
+//   onscroll = function() {
+// scrollFunction()};
+
+// function scrollFunction() {
+//     if (document.scrollTop > 20 || document.querySelector.scrollTop > 20) {
+//         scrollButton.style.display = "block";
+//     } 
+//     else {
+//             scrollButton.style.display = "none";
+//         }
+// }
+
+// function scrollTop() {
+//     document.body.scrollTop = 0;
+//     document.documentElement.scrollTop = 0;
+// }
+document.getElementById("get-started-link").addEventListener("click", function(event) {
+    event.preventDefault();
+    const recipesSection = document.getElementById("Recipes");
+    const scrollOptions = {
+      behavior: "smooth",
+      block: "start"
+    };
+    recipesSection.scrollIntoView(scrollOptions);
+  });
