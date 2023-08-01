@@ -31,6 +31,7 @@
 }
 .nav-bar h1 {
   font-family: "Arial Black";
+  cursor: pointer;
 }
 .nav-bar li {
   margin-right: 20px;
@@ -167,6 +168,7 @@
 .hero-img {
   /* width: 400px;
   height: 100px; */
+  cursor: pointer;
 }
 .hero-btn {
   border: none;
