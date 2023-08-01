@@ -561,3 +561,57 @@ button:hover {
   margin-top: 10px;
   margin-top: 10px;
 }
+
+
+.footer-container{
+  color: #ffffff;
+}
+.footer-first{ margin-top: 10px ;
+  width: 400px;
+  padding-left: 70px;
+ 
+  display: inline-block;
+}
+
+  
+
+
+.footer-first span{
+  color: red;
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  
+  
+} 
+.footer-sec{
+  color: white;
+  display: inline-block;
+  margin-left: 20%;
+}
+ul.no-bullets {
+  list-style: none;
+
+  
+ 
+}
+.footer-third{
+  color: white;
+    display: inline-block;
+    margin-left: 20%;
+}
+
+.footer-img{
+  margin-top: 20px;
+  
+
+  
+  padding-left: 70px;
+}
+.foter-parent{
+  background-color: green;
+  
+}
+
+
+
