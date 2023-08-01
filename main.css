@@ -136,6 +136,7 @@
 }
 .img-row {
   height: 150px;
+  width: 100%;
   display: flex;
   overflow: hidden;
   white-space: nowrap;
@@ -152,7 +153,7 @@
 }
 @keyframes moveLeftToRight {
   0% {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);
