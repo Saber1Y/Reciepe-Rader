@@ -31,203 +31,230 @@
       </div>
     </nav>
     <main>
-    <section class="main-section_row" id="Home">
-      <div class="main-section">
-        <h2>
-          Let’s Start<br />Cooking With<br />
-          Popular <span>Recipes</span>
-        </h2>
-        <p>
-          Want to learn to cook but confused how to start?<br />
-          No need to worry again!
-        </p>
-        <a href="#" id="get-started-link">
-          <button class="btn"><span>Get Started</span></button>
-        </a>
-      </div>
-      <a class="modal-link">
-        <div class="main-img">
-          <img src="/img/Reciep Book.png" alt="Recipe Book" />
-        </div>
-      </a>
-    </section>
-    <section class="secondary-row" id="popular">
-      <h3>Popular Food</h3>
-      <p>
-        We provide a variety of food and beverage recipes<br />with high taste
-        and famous chef
-      </p>
-      <div class="img-row">
-        <img src="/img/f1 1.png" alt="" />
-        <img src="/img/f2 1.png" alt="" />
-        <img src="/img/f3 1.png" alt="" />
-        <img src="/img/f4 1.png" alt="" />
-        <img src="/img/f5 1.png" alt="" />
-        <img src="/img/f6 1.png" alt="" />
-        <img src="/img/f7 1.png" alt="" />
-        <img src="/img/f8.png" alt="" />
-      </div>
-      <div class="img-row">
-        <img src="/img/f9.png" alt="" />
-        <img src="/img/f10.png" alt="" />
-        <img src="/img/f11 1.png" alt="" />
-        <img src="/img/f21 1.png" alt="" />
-        <img src="/img/f13.png" alt="" />
-        <img src="/img/f14.png" alt="" />
-        <img src="/img/f6 1.png" alt="" />
-        <img src="/img/f6 1.png" alt="" />
-      </div>
-    </section>
-    <section class="hero-section">
-      <a class="modal-link">
-        <div class="hero-img">
-          <img src="/img/greeenchef 1.png" alt="Chef" />
-        </div>
-      </a>
-      <div class="modal-overlay">
-        <div class="modal-content">
-          <span class="modal-close">&times;</span>
-          <img class="modal-image" src="" alt="" />
-        </div>
-      </div>
-      <div class="hero-main">
-        <button class="hero-btn">Variety of Foods</button>
-        <h2>
-          Variety of food and<br />
-          beverage recipes
-        </h2>
-        <p>
-          We have prepared a variety of food and beverage<br />
-          recipes from famous chef, with cooking steps<br />
-          and with good taste
-        </p>
-        <button class="hero-btn__main"><span>View Reciepe</span></button>
-      </div>
-    </section>
-    <section class="Reciepe" id="Recipes">
-      <div class="Reciepe__container">
-        <div class="search-bar">
-          <div class="search-icon-container">
-            <i class="fas fa-search" style="color: #000000" wid></i>
-          </div>
-          <input type="text" id="search" placeholder="Enter Food Name..." />
-        </div>
-        <div class="Search-Results" id="searchResults"></div>
-      </div>
-      <div class="Reciepe--img">
-        <div class="reciepe-container">
-          <img src="/img/brakfast 1.png" alt="Breakfast" width="250px" />
-          <div class="overlay"><strong>Breakfast</strong></div>
-        </div>
-        <div class="reciepe-container">
-          <img src="/img/lunch 1.png" alt="Lunch" width="250px" />
-          <div class="overlay"><strong>Lunch</strong></div>
-        </div>
-        <div class="reciepe-container">
-          <img src="/img/ice cream 1.png" alt="Dessert" width="250px" />
-          <div class="overlay"><strong>Dessert</strong></div>
-        </div>
-      </div>
-      <div class="Reciepe--img">
-        <div class="reciepe-container">
-          <img src="/img/dinner 1.png" alt="Dinner" width="250px" />
-          <div class="overlay"><strong>Dinner</strong></div>
-        </div>
-        <div class="reciepe-container">
-          <img src="/img/breaad 3.png" alt="Snack" width="250px" />
-          <div class="overlay"><strong>Snack</strong></div>
-        </div>
-        <div class="reciepe-container">
-          <img src="/img/coffee 1.png" alt="Drink" width="250px" />
-          <div class="overlay"><strong>Drink</strong></div>
-        </div>
-      </div>
-    </section>
-    <section class="contact-form" id="Contact">
-      <h2>Contact Us</h2>
-      <form>
-        <div class="input-group">
-          <label for="name">Name :</label>
-          <input type="text" id="name" placeholder="Enter your name" required />
-        </div>
-        <div class="input-group">
-          <label for="email">Email :</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter your email"
-            required
-          />
-        </div>
-        <div class="input-group">
-          <label for="message">Message :</label>
-          <textarea
-            id="message"
-            placeholder="Enter your message"
-            required
-          ></textarea>
-        </div>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-    <section class="newsletter-section">
-      <h2>Subscribe to Our Newsletter</h2>
-      <p>Stay up-to-date with the latest recipes and cooking tips.</p>
-      <form id="newsletter-form" onsubmit="submitForm(event)">
-        <div class="input-group">
-          <i class="fa-regular fa-envelope"></i>
-          <input type="email" id="email" placeholder=" " required />
-          <label for="email">Enter your email</label>
-        </div>
-        <button type="submit">Subscribe</button>
-      </form>
-      <div id="success-message"></div>
-    </section>
-    <footer class="foter-parent">
-      <div class="footer-container">
-        <div class="footer-first">
+      <section class="main-section_row" id="Home">
+        <div class="main-section">
+          <h2>
+            Let’s Start<br />Cooking With<br />
+            Popular <span>Recipes</span>
+          </h2>
           <p>
-            <span>Reciepe Raider</span> At Reciepe Raider, we believe that
-            everyone should have the opportunity to explore the culinary world
-            and enjoy delicious meals. We are dedicated to providing accessible
-            and innovative recipe solutions to individuals of all backgrounds.
+            Want to learn to cook but confused how to start?<br />
+            No need to worry again!
           </p>
+          <a href="#" id="get-started-link">
+            <button class="btn"><span>Get Started</span></button>
+          </a>
         </div>
-        <div class="footer-third">
-          <h1>Meal Categories</h1>
-          <ul class="no-bullets">
-            <li>Breakfast</li>
-            <li>Lunch</li>
-            <li>Dinner</li>
-            <li>Dessert</li>
-          </ul>
+        <a class="modal-link">
+          <div class="main-img">
+            <img src="/img/Reciep Book.png" alt="Recipe Book" />
+          </div>
+        </a>
+      </section>
+      <section class="secondary-row" id="popular">
+        <h3>Popular Food</h3>
+        <p>
+          We provide a variety of food and beverage recipes<br />with high taste
+          and famous chef
+        </p>
+        <div class="img-row">
+          <img src="/img/f1 1.png" alt="" />
+          <img src="/img/f2 1.png" alt="" />
+          <img src="/img/f3 1.png" alt="" />
+          <img src="/img/f4 1.png" alt="" />
+          <img src="/img/f5 1.png" alt="" />
+          <img src="/img/f6 1.png" alt="" />
+          <img src="/img/f7 1.png" alt="" />
+          <img src="/img/f8.png" alt="" />
         </div>
+        <div class="img-row">
+          <img src="/img/f9.png" alt="" />
+          <img src="/img/f10.png" alt="" />
+          <img src="/img/f11 1.png" alt="" />
+          <img src="/img/f21 1.png" alt="" />
+          <img src="/img/f13.png" alt="" />
+          <img src="/img/f14.png" alt="" />
+          <img src="/img/f6 1.png" alt="" />
+          <img src="/img/f6 1.png" alt="" />
+        </div>
+      </section>
+      <section class="hero-section">
+        <a class="modal-link">
+          <div class="hero-img">
+            <img src="/img/greeenchef 1.png" alt="Chef" />
+          </div>
+        </a>
+        <div class="modal-overlay">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img class="modal-image" src="" alt="" />
+          </div>
+        </div>
+        <div class="hero-main">
+          <button class="hero-btn">Variety of Foods</button>
+          <h2>
+            Variety of food and<br />
+            beverage recipes
+          </h2>
+          <p>
+            We have prepared a variety of food and beverage<br />
+            recipes from famous chef, with cooking steps<br />
+            and with good taste
+          </p>
+          <button class="hero-btn__main"><span>View Reciepe</span></button>
+        </div>
+      </section>
+      <section class="Reciepe" id="Recipes">
+        <div class="Reciepe__container">
+          <div class="search-bar">
+            <div class="search-icon-container">
+              <i class="fas fa-search" style="color: #000000" wid></i>
+            </div>
+            <input type="text" id="search" placeholder="Enter Food Name..." />
+          </div>
+          <div class="Search-Results" id="searchResults"></div>
+        </div>
+        <div class="Reciepe--img">
+          <div class="row1">
+            <div class="reciepe-container">
+              <img
+                src="/img/brakfast 1.png"
+                alt="Breakfast"
+                width="250px"
+                class="image"
+              />
+              <div class="overlay">
+                <div class="text">Breakfast</div>
+              </div>
+            </div>
+            <div class="reciepe-container">
+              <img src="/img/lunch 1.png" alt="Lunch" width="250px" />
+              <div class="overlay">
+                <div class="text">Lunch</div>
+              </div>
+            </div>
+            <div class="reciepe-container">
+              <img src="/img/ice cream 1.png" alt="Dessert" width="250px" />
+              <div class="overlay">
+                <div class="text">Dessert</div>
+              </div>
+            </div>
+          </div>
 
-        <div class="footer-third">
-          <h1>Support</h1>
-          <ul class="no-bullets">
-            <li>Support</li>
-            <li>FAQ</li>
-            <li>Privacy Policy</li>
-            <li>Terms of Service</li>
-          </ul>
+          <div class="row2">
+            <div class="reciepe-container">
+              <img src="/img/dinner 1.png" alt="Dinner" width="250px" />
+              <div class="overlay">
+                <div class="text">Dinner</div>
+              </div>
+            </div>
+            <div class="reciepe-container">
+              <img src="/img/breaad 3.png" alt="Snack" width="250px" />
+              <div class="overlay">
+                <div class="text">Snack</div>
+              </div>
+            </div>
+            <div class="reciepe-container">
+              <img src="/img/coffee 1.png" alt="Drink" width="250px" />
+              <div class="overlay">
+                <div class="text">Drink</div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="footer-img">
-        <i class="fa-brands fa-twitter fa-2xl"></i>
-        <i class="fa-brands fa-facebook fa-2xl"></i>
-        <i class="fa-brands fa-instagram fa-2xl"></i>
-      </div>
-      <!-- <i
+      </section>
+      <section class="contact-form" id="Contact">
+        <h2>Contact Us</h2>
+        <form>
+          <div class="input-group">
+            <label for="name">Name :</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="message">Message :</label>
+            <textarea
+              id="message"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+      <section class="newsletter-section">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay up-to-date with the latest recipes and cooking tips.</p>
+        <form id="newsletter-form" onsubmit="submitForm(event)">
+          <div class="input-group">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" id="email" placeholder=" " required />
+            <label for="email">Enter your email</label>
+          </div>
+          <button type="submit">Subscribe</button>
+        </form>
+        <div id="success-message"></div>
+      </section>
+      <footer class="foter-parent">
+        <div class="footer-container">
+          <div class="footer-first">
+            <p>
+              <span>Reciepe Raider</span> At Reciepe Raider, we believe that
+              everyone should have the opportunity to explore the culinary world
+              and enjoy delicious meals. We are dedicated to providing
+              accessible and innovative recipe solutions to individuals of all
+              backgrounds.
+            </p>
+          </div>
+          <div class="footer-third">
+            <h1>Meal Categories</h1>
+            <ul class="no-bullets">
+              <li>Breakfast</li>
+              <li>Lunch</li>
+              <li>Dinner</li>
+              <li>Dessert</li>
+            </ul>
+          </div>
+
+          <div class="footer-third">
+            <h1>Support</h1>
+            <ul class="no-bullets">
+              <li>Support</li>
+              <li>FAQ</li>
+              <li>Privacy Policy</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-img">
+          <i class="fa-brands fa-twitter fa-2xl"></i>
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+        </div>
+        <!-- <i
         class="fa-solid fa-arrow-up fa-2xl"
         id="arrow-icon"
         onchange="scrollToTop()"
       ></i> -->
-    </footer>
+      </footer>
+      <script
+        src="https://kit.fontawesome.com/97d7b43d58.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="/main.js"></script>
+    </main>
   </body>
-  <script
-    src="https://kit.fontawesome.com/97d7b43d58.js"
-    crossorigin="anonymous"
-  ></script>
-  <script src="/main.js"></script>
 </html>
