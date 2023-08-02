@@ -21,7 +21,7 @@
   align-items: center;
   color: var(--secondary--color);
   padding: 10px;
-  margin: 0 200px 0 0;
+  margin: 0 100px 0 0;
   background: #d9d9d9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -31,7 +31,7 @@
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 9999; r 
+  z-index: 9999;
 }
 .nav-bar__container {
   display: flex;
@@ -55,10 +55,20 @@
   text-decoration: none;
   color: var(--secondary--color);
   font-family: "DM Sans", sans-serif;
-  /* animation: showRight 1s ease forwards; */
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.nav-bar li a:hover::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--primary--color);
+  transition: all 0.3s ease;
 }
 .nav-bar li a:hover {
   color: var(--primary--color);
+  transition: color 0.5s ease;
 }
 .nav-bar span {
   color: var(--primary--color);
@@ -119,7 +129,7 @@
   transition: 0.5s;
 }
 .btn:hover span {
-  padding-right: 25px;
+  padding-right: 20px;
 }
 .btn:hover span::after {
   opacity: 1;
@@ -128,6 +138,9 @@
 .btn:hover {
   color: var(--primary--color);
   background-color: #ffffff;
+  transition: all 0.5s;
+  border: 1px solid var(--primary--color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .btnlf {
   background-color: var(--advance--color);
@@ -185,13 +198,9 @@
 .hero-section {
   display: flex;
   justify-content: space-around;
-  /* text-align: center; */
-  /* align-items: center; */
   margin: 10% 0;
 }
 .hero-img {
-  /* width: 400px;
-  height: 100px; */
   cursor: pointer;
 }
 .modal-link {
@@ -287,9 +296,8 @@
 .Reciepe {
   background-color: var(--primary--color);
   height: auto;
-
 }
-#Recipes{
+#Recipes {
   scroll-margin-top: 100px;
 }
 .search-bar {
@@ -360,16 +368,16 @@
 
 .overlay {
   position: absolute;
-  bottom: 0; 
+  bottom: 0;
   left: 0;
   right: 0;
   background-color: #0dc40ab3;
   color: #000;
-  height: 0; 
+  height: 0;
   opacity: 0;
   transition: height 0.5s ease, opacity 0.5s ease;
   font-size: 18px;
-  text-align: center; 
+  text-align: center;
   width: 100%;
   overflow: hidden;
 }
@@ -377,13 +385,12 @@
 .reciepe-container:hover .overlay {
   opacity: 1;
   height: 50%;
-
 }
 
 .reciepe-container .text {
   color: #ffffff;
   font-size: 20px;
-  position: absolute; 
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -460,62 +467,11 @@ button:hover {
   background-color: var(--primary--color);
   border: 2px solid #fff;
 }
-/*#message {
-  height: 500%;
-} */
- /* .newsletter-section {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-}
-
-.newsletter-section h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.newsletter-section p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.newsletter-section form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.newsletter-section .input-group {
-  margin-bottom: 15px;
-}
-
-.newsletter-section label {
-  font-weight: bold;
-}
-
-.newsletter-section input {
-  padding: 8px;
-  border: none;
-  border-radius: 4px;
-  background-color: #fff;
-}
-
-.newsletter-section button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  background-color: #4caf50;
-  color: #fff;
-  cursor: pointer;
-  font-weight: bold;
-} */
-
 #success-message {
   color: #4caf50;
   font-size: 18px;
   margin-top: 10px;
-} 
+}
 .newsletter-section {
   background-color: #f2f2f2;
   padding: 20px;

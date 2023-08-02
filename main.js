@@ -24,46 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-  function submitForm(event) {
-    event.preventDefault();
-
-    const emailInput = document.getElementById("email");
-    const successMessage = document.getElementById("success-message");
-
-  
-    if (emailInput.value.trim() !== "") {
-  
-      successMessage.textContent = "Thank you for subscribing!";
-      successMessage.style.color = "#4CAF50";
-      emailInput.value = ""; 
-    } else {
-      
-      successMessage.textContent = "Please enter a valid email address.";
-      successMessage.style.color = "#FF0000";
-    }
-  }
-
-  const newsletterForm = document.getElementById("newsletter-form");
-  newsletterForm.addEventListener("submit", submitForm);
-   
-
-//   var scrollButton = document.querySelector('arrow-icon');
-//   onscroll = function() {
-// scrollFunction()};
-
-// function scrollFunction() {
-//     if (document.scrollTop > 20 || document.querySelector.scrollTop > 20) {
-//         scrollButton.style.display = "block";
-//     } 
-//     else {
-//             scrollButton.style.display = "none";
-//         }
-// }
-
-// function scrollTop() {
-//     document.body.scrollTop = 0;
-//     document.documentElement.scrollTop = 0;
-// }
 document.getElementById("get-started-link").addEventListener("click", function(event) {
     event.preventDefault();
     const recipesSection = document.getElementById("Recipes");
