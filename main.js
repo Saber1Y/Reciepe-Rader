@@ -33,3 +33,38 @@ document.getElementById("get-started-link").addEventListener("click", function(e
     };
     recipesSection.scrollIntoView(scrollOptions);
   });
+
+ async function fetchRecipes() {
+  try {
+    const apiKey = 
+    "d7102e3b11405430ed81fb0f2db19233—"
+    const apiUrl = 'https://api.edamam.com/search';
+    const query = document.querySelector('search').value.trim();
+  
+   if (!query) {
+    alert('Please enter a food name');
+    return;
+   }
+  
+   const response = await fetch(`${apiUrl}?q=${query}&app_id=${apiKey}`, {method: 'GET',
+  });
+  if (!response.ok) {
+    throw new Error('Network response failed')
+  }
+
+  const data = await response.json();
+  displayReciepes(data.hits);
+} catch (error) {
+  console.error('error fetching data', error);
+}
+}
+function displayReciepes(reciepes) {
+  const searchResultsContainer = document.querySelector('search-Results');
+  searchResultsContainer.innerHTML = '';
+
+  if  (reciepes.length === 0) {
+    searchResultsContainer.innerHTML = '<p>No Reciepes were Found</p>';
+    return;
+  }
+}
+

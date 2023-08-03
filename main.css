@@ -300,39 +300,45 @@
 #Recipes {
   scroll-margin-top: 100px;
 }
-.search-bar {
-  position: relative;
-  top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+div.search-bar {
   width: 500px;
-  height: 40px;
-  border: 1px solid #d9d9d9;
-  background-color: var(--advance--color);
-  border-radius: 10px;
-  padding: 5px;
-  margin: 50px auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 10px;
 }
 
-.search-icon-container {
-  padding-right: 5px;
-}
-
-.search-bar i {
-  color: #000000;
-  width: 40px;
-}
-
-.search-bar input[type="text"] {
-  flex: 1;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  background: transparent;
+div.search-bar input[type="text"] {
+  padding: 10px;
   text-align: center;
-  color: #000000;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 5px 0 0 5px;
 }
+div.search-bar input[type="text"]:focus {
+  outline: none;
+}
+div.search-bar button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: green;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+div.search-bar button:hover {
+  opacity: 0.9;
+}
+
 .Reciepe--img {
   display: flex;
   flex-wrap: wrap;
