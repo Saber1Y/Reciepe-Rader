@@ -338,7 +338,48 @@ div.search-bar button {
 div.search-bar button:hover {
   opacity: 0.9;
 }
+.carousel-container {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
+.carousel-track {
+  display: flex;
+  width: 100%;
+}
+
+.carousel-item {
+  flex: 0 0 400px;
+  margin-right: 20px;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ccc;
+  border: none;
+  color: var(--secondary--color);
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
+}
 .Reciepe--img {
   display: flex;
   flex-wrap: wrap;

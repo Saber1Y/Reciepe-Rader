@@ -105,14 +105,24 @@
         </div>
       </section>
       <section class="Reciepe" id="Recipes">
-        <div class="search-bar">
-          <input type="text" placeholder="Enter Food Name..." name="search" />
-          <button type="submit"><i class="fa fa-search"></i></button>
+        <form onsubmit="fetchRecipes(); return false;">
+          <div class="search-bar">
+            <input type="text" placeholder="Enter Food Name..." name="search" />
+            <button type="submit" id="searchButton">
+              <i class="fa fa-search" id="searchIcon"></i>
+            </button>
+          </div>
+        </form>
+        <div class="carousel-container">
+          <div class="carousel-track" id="carouselTrack"></div>
+          <button class="carousel-prev" id="carouselPrevBtn">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+          <button class="carousel-next" id="carouselNextBtn">
+            <i class="fa fa-chevron-right"></i>
+          </button>
         </div>
-
-        <div id="results-container">
-          <!-- Results will be displayed here -->
-        </div>
+        <div id="results-container"></div>
         <div class="Reciepe--img">
           <div class="row1">
             <div class="reciepe-container">
