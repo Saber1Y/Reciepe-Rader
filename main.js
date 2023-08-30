@@ -1,4 +1,9 @@
-;
+document.getElementById("menu-icon").addEventListener("click", function () {
+  const navLinks = document.getElementById("nav-links");
+  navLinks.classList.toggle("active");
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const modalLinks = document.querySelectorAll(".modal-link");
     const modalOverlay = document.querySelector(".modal-overlay");
