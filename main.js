@@ -1,8 +1,9 @@
-document.getElementById("menu-icon").addEventListener("click", function () {
-  const navLinks = document.getElementById("nav-links");
-  navLinks.classList.toggle("active");
-});
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
 
+menuIcon.addEventListener('click', function() {
+    navLinks.classList.toggle('show-nav');
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const modalLinks = document.querySelectorAll(".modal-link");
