@@ -751,7 +751,7 @@ ul.no-bullets li:hover {
   }
   .hero-img img {
     padding: 10px;
-    width: 350px;
+    width: 400px;
   }
   .hero-main {
     margin: 10px auto;
@@ -783,19 +783,20 @@ ul.no-bullets li:hover {
     font-size: 50px;
     margin-top: 150px;
   }
-  .hero-img img {
-    cursor: pointer;
-    width: 350px;
-  }
   .hero-main {
     margin: 10px auto;
     text-align: center;
+  }
+  .hero-img img {
+    cursor: pointer;
+    width: 350px;
+    padding-left: 10px;
   }
   .hero-section {
     display: flex;
     justify-content: space-around;
     margin: 10% auto;
-    align-items: center;
+    text-align: center;
   }
   .hero-main p {
     font-family: "Segoe UI";

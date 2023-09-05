@@ -1,3 +1,4 @@
+//HamBurger Menu / rotation
 const menuIcon = document.getElementById('menu-icon');
 const navLinks = document.getElementById('nav-links');
 const bar1 = document.getElementById('bar1');
@@ -20,9 +21,7 @@ menuIcon.addEventListener('click', function() {
   }
 });
 
-
-
-document.addEventListener("DOMContentLoaded", function () {
+//Modal-Images
     const modalLinks = document.querySelectorAll(".modal-link");
     const modalOverlay = document.querySelector(".modal-overlay");
     const modalClose = document.querySelector(".modal-close");
@@ -47,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
         modalOverlay.style.display = "none";
       }
     });
-  });
 
 document.getElementById("get-started-link").addEventListener("click", function(event) {
     event.preventDefault();
@@ -59,26 +57,34 @@ document.getElementById("get-started-link").addEventListener("click", function(e
     recipesSection.scrollIntoView(scrollOptions);
   });
 
-  document.addEventListener("DOMContentLoaded", function () {
+
     const searchButton = document.getElementById("searchButton");
     const searchIcon = document.getElementById("searchIcon");
-  
     searchButton.addEventListener("click", fetchRecipes);
     searchIcon.addEventListener("click", fetchRecipes);
-  })
+
 
   async function fetchRecipes() {
     try {
+      const apiID = "1f3f8a2e";
       const apiKey = "d7102e3b11405430ed81fb0f2db19233";
-      const apiUrl = 'https://cors-anywhere.herokuapp.com/https://api.edamam.com/search';
-      const query = document.querySelector('input[name="search"]').value.trim(); 
-  
+      const apiUrl = 'https://api.edamam.com/api/recipes/v2';
+      const query = document.getElementById('search').value.trim(); 
+    
+      // data = {
+      //  q: query,
+
+      //  app_id:  apiID,
+
+      //  app_key: apiKey,
+      // }
+
       if (!query) {
         alert('Please enter a food name');
         return;
       }
   
-      const response = await fetch(`${apiUrl}?q=${query}&app_id=${apiKey}`, {
+      const response = await fetch(`${apiUrl}?q=${query}&app_id=${apiID}&app_key=${apiKey}&type=any`, {
         method: 'GET',
       });
   
@@ -87,13 +93,14 @@ document.getElementById("get-started-link").addEventListener("click", function(e
       }
   
       const data = await response.json();
+      console.log(data);
       displayRecipes(data.hits);
     } catch (error) {
       console.error('Error fetching data', error);
     }
   }
   
-  function displayRecipes(recipes) {
+  function displayRecipes (recipes) {
     const carouselTrack = document.getElementById('carouselTrack');
     carouselTrack.innerHTML = '';
   
