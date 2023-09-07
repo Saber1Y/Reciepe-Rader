@@ -7,7 +7,7 @@ const bar3 = document.getElementById('bar3');
 
 menuIcon.addEventListener('click', function() {
   menuIcon.classList.toggle('is-active');
-  navLinks.classList.toggle('show-nav');
+  navLinks.classList.toggle('show-nav'); 
 
   bar1.classList.toggle('rotate-bar1');
   bar2.classList.toggle('hide-bar2');
@@ -47,8 +47,8 @@ menuIcon.addEventListener('click', function() {
       }
     });
 
-document.getElementById("get-started-link").addEventListener("click", function(event) {
-    event.preventDefault();
+document.getElementById("get-started-link").addEventListener("click", function(e) {
+    e.preventDefault();
     const recipesSection = document.getElementById("Recipes");
     const scrollOptions = {
       behavior: "smooth",
@@ -65,17 +65,15 @@ document.getElementById("get-started-link").addEventListener("click", function(e
 
 
   async function fetchRecipes() {
+
     try {
       const apiID = "1f3f8a2e";
       const apiKey = "d7102e3b11405430ed81fb0f2db19233";
       const apiUrl = 'https://api.edamam.com/api/recipes/v2';
       const query = document.getElementById('search').value.trim(); 
-    
       // data = {
       //  q: query,
-
       //  app_id:  apiID,
-
       //  app_key: apiKey,
       // }
 
@@ -83,11 +81,11 @@ document.getElementById("get-started-link").addEventListener("click", function(e
         alert('Please enter a food name');
         return;
       }
-  
+
       const response = await fetch(`${apiUrl}?q=${query}&app_id=${apiID}&app_key=${apiKey}&type=any`, {
         method: 'GET',
       });
-  
+
       if (!response.ok) {
         throw new Error('Network response failed');
       }
@@ -95,7 +93,8 @@ document.getElementById("get-started-link").addEventListener("click", function(e
       const data = await response.json();
       console.log(data);
       displayRecipes(data.hits);
-    } catch (error) {
+    } 
+    catch (error) {
       console.error('Error fetching data', error);
     }
   }
