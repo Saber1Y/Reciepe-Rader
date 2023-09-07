@@ -156,6 +156,7 @@
   text-align: center;
   padding: 10px;
   width: 100%;
+  max-width: fit-content;
 }
 #popular {
   scroll-margin-top: 100px;
@@ -352,18 +353,36 @@ div.search-bar button:hover {
 .carousel-container {
   position: relative;
   width: 400px;
-  margin: 0 auto;
+  top: 0;
+  margin: 20px auto;
   overflow: hidden;
 }
-
 .carousel-track {
   display: flex;
   width: 100%;
 }
-
 .carousel-item {
   flex: 0 0 400px;
   margin-right: 20px;
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 10px; /* Add some padding for spacing */
+  background: #fff; /* Add a background color */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+  text-align: center; /* Center text */
+  transition: transform 0.2s; /* Add a smooth transition */
+}
+
+.carousel-item img {
+  max-width: 100%; /* Ensure the image fits within its container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* Add hover effect for the items */
+.carousel-item:hover {
+  transform: translateY(5px); /* Move the item down on hover */
 }
 
 .carousel-prev,
@@ -611,6 +630,18 @@ ul.no-bullets li:hover {
   background-color: green;
   max-height: full-height;
   max-width: full-width;
+}
+.recipe-info {
+  margin: 5px auto;
+  font-size: 1.2em;
+  font-family: "Lato", sans-serif;
+}
+.rcp {
+  margin: 5px auto;
+  font-size: 2em;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #000000;
+  font-weight: 800;
 }
 /* #arrow-icon {
   position: relative;

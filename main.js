@@ -112,10 +112,10 @@ document.getElementById("get-started-link").addEventListener("click", function(e
       const recipeCard = `
         <div class="carousel-item">
           <img src="${recipe.recipe.image}" alt="${recipe.recipe.label}" />
-          <h3>${recipe.recipe.label}</h3>
-          <p>Preparation Time: ${recipe.recipe.totalTime}</p>
-          <p>Calories: ${Math.round(recipe.recipe.calories)}</p>
-          <p>Ingredients: ${recipe.recipe.ingredientLines.join(', ')}</p>
+          <h3 class="recipe-info rcp">${recipe.recipe.label}</h3>
+          <p class="recipe-info">Preparation Time: ${recipe.recipe.totalTime}</p>
+          <p class="recipe-info">Calories: ${Math.round(recipe.recipe.calories)}</p>
+          <p class="recipe-info">Ingredients: ${recipe.recipe.ingredientLines.join(', ')}</p>
           <a href="${recipe.recipe.url}" target="_blank">View Recipe</a>
         </div>
       `;
