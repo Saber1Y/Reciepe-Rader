@@ -155,8 +155,8 @@
   background-color: var(--primary--color);
   text-align: center;
   padding: 10px;
-  width: 100%;
-  max-width: fit-content;
+
+  max-width: 100%;
 }
 #popular {
   scroll-margin-top: 100px;
@@ -207,6 +207,8 @@
   justify-content: space-between;
   padding-left: 100px;
   margin: 10% auto;
+  align-items: center;
+  text-align: center;
 }
 .hero-img img {
   cursor: pointer;
@@ -376,13 +378,12 @@ div.search-bar button:hover {
 }
 
 .carousel-item img {
-  max-width: 100%; /* Ensure the image fits within its container */
-  height: auto; /* Maintain the image's aspect ratio */
+  max-width: 100%;
+  height: auto;
 }
 
-/* Add hover effect for the items */
 .carousel-item:hover {
-  transform: translateY(5px); /* Move the item down on hover */
+  transform: translateY(5px);
 }
 
 .carousel-prev,
@@ -629,7 +630,7 @@ ul.no-bullets li:hover {
 .foter-parent {
   background-color: green;
   max-height: full-height;
-  max-width: full-width;
+  max-width: 100%;
 }
 .recipe-info {
   margin: 5px auto;
@@ -639,15 +640,11 @@ ul.no-bullets li:hover {
 .rcp {
   margin: 5px auto;
   font-size: 2em;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: #000000;
   font-weight: 800;
 }
-/* #arrow-icon {
-  position: relative;
-  top: 0;
-  left: 50%;
-} */
 
 @media (max-width: 768px) {
   #nav-links {
@@ -697,7 +694,7 @@ ul.no-bullets li:hover {
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 70px auto;
+    margin: 30px auto;
     padding-left: 0;
   }
   .main-section_row h2 {
@@ -720,7 +717,7 @@ ul.no-bullets li:hover {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
     font-size: x-large;
-    margin: 19px auto;
+    margin: 5px auto;
     text-align: center;
     font-weight: 600;
     color: var(--primary--color);
@@ -840,105 +837,18 @@ ul.no-bullets li:hover {
     flex-wrap: wrap;
   }
 }
-/* @media (max-width: 480px) {
-  .main-section_row {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: 70px auto;
-  }
-  .main-section_row h2 {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-    font-size: 63px;
-    line-height: 1;
+
+@media (max-width: 300px) {
+}
+/* @media (max-width: 400px) {
+  .foter-parent {
+    background-color: red;
+    max-width: 100%;
+    width: auto;
     margin: 0 auto;
-    text-align: center;
   }
-  .main-section_row h2 span {
-    color: var(--primary--color);
-  }
-  .main-img img {
-    max-width: 500px;
+  .footer-container {
+    max-width: 100%;
     margin: 0 auto;
-    align-items: center;
-  }
-  .main-section_row p {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-size: x-large;
-    margin: 19px auto;
-    text-align: center;
-    font-weight: 600;
-    color: var(--primary--color);
-  }
-  .btn {
-    display: flex;
-    margin: 10px auto;
-    text-align: center;
-    align-items: center;
-    width: 120px;
-    height: 41px;
-    border: 1px solid;
-    border-radius: 10px;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 700;
-    align-items: center;
-    color: var(--advance--color);
-    background-color: var(--primary--color);
-    transition: all 0.5s;
-    cursor: pointer;
-    position: relative;
-  }
-  .btn span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    transition: 0.5s;
-    align-items: center;
-  }
-  .btn span:after {
-    content: "\00bb";
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  .btn:hover span {
-    padding-right: 20px;
-  }
-  .btn:hover span::after {
-    opacity: 1;
-    right: 0;
-  }
-  .secondary-row {
-    background-color: var(--primary--color);
-    text-align: center;
-    padding: 10px;
-    max-width: fit-content;
-  }
-  .hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 10% auto;
-    text-align: center;
-  }
-  .hero-main {
-    margin: 10px auto;
-    text-align: center;
-  }
-  .hero-main p {
-    font-family: "Segoe UI";
-    color: var(--secondary--color);
-    font-size: 20px;
-    line-height: 1.5;
-    font-weight: 400;
-    color: #48d645;
-    font-weight: 600;
   }
 } */
