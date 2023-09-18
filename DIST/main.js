@@ -99,12 +99,12 @@ document.getElementById("get-started-link").addEventListener("click", function(e
     }
   }
   
-  function displayRecipes (recipes) {
+  function displayRecipes(recipes){
     const carouselTrack = document.getElementById('carouselTrack');
     carouselTrack.innerHTML = '';
   
-    if (recipes.length === 0) {
-      document.getElementById('searchResults').innerHTML = '<p>No Recipes were Found</p>';
+    if(recipes.length === 0) {
+      document.getElementById('results-container').innerHTML = '<p>No Recipes were Found</p>';
       return;
     }
   
