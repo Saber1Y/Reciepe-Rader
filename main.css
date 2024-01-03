@@ -658,6 +658,14 @@ ul.no-bullets li:hover {
   font-weight: 800;
 }
 
+.error {
+  color: red !important;
+  text-align: center;
+  align-items: center;
+  font: bolder;
+  font-size: 5rem;
+}
+
 @media (max-width: 768px) {
   #nav-links {
     display: none;
