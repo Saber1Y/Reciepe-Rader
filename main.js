@@ -1,4 +1,4 @@
-//HamBurger Menu / rotation
+
 const menuIcon = document.getElementById('menu-icon');
 const navLinks = document.getElementById('nav-links');
 const bar1 = document.getElementById('bar1');
@@ -21,7 +21,7 @@ menuIcon.addEventListener('click', function() {
   }
 });
 
-//Modal-Images
+
     const modalLinks = document.querySelectorAll(".modal-link");
     const modalOverlay = document.querySelector(".modal-overlay");
     const modalClose = document.querySelector(".modal-close");
