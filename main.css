@@ -76,31 +76,34 @@
 }
 .main-section_row {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   text-align: center;
   align-items: center;
+  width: 100%;
   margin: 30px auto;
-  padding-left: 100px;
 }
+
+
 .main-section_row h2 {
   font-family: "DM Sans", sans-serif;
-  font-weight: 600;
-  font-size: 63px;
-  line-height: 1;
-}
-.main-section_row h2 span {
   color: var(--primary--color);
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  margin: 5px auto;
 }
-.main-img {
+/* .main-img {
   max-width: 500px;
-  width: 00%;
-}
-.main-section_row p {
-  font-family: sans-serif;
-  font-size: x-large;
-  margin: 10px 0;
-  color: var(--primary--color);
-  padding: 20px;
+  width: 100%;
+} */
+.main-section > p {
+  color: var(--secondary--color);
+  margin: 5px auto;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: bold;
+  margin: 10px auto;
 }
 .btn {
   margin-top: 10px;
@@ -213,10 +216,6 @@
   cursor: pointer;
   max-width: 500px;
   margin-left: 0 auto;
-}
-.modal-link {
-  cursor: pointer;
-  max-width: 100%;
 }
 
 .modal-overlay {
@@ -708,6 +707,7 @@ ul.no-bullets li:hover {
     background-color: #333;
     margin: 6px auto;
   }
+
   .main-section_row {
     display: flex;
     flex-direction: column-reverse;
@@ -721,8 +721,10 @@ ul.no-bullets li:hover {
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
     font-size: 63px;
-    line-height: 1;
-    margin: 0 auto;
+    /* margin: 0 0; */
+    padding: 0 0;
+    width: 100%;
+    align-items: center;
     text-align: center;
   }
   .main-section_row h2 span {
@@ -731,7 +733,11 @@ ul.no-bullets li:hover {
   .main-img img {
     max-width: 500px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     align-items: center;
+    width: 100%;
   }
   .main-section_row p {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -857,6 +863,5 @@ ul.no-bullets li:hover {
     flex-wrap: wrap;
   }
 }
-
 @media (max-width: 300px) {
 }
