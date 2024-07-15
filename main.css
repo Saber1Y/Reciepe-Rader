@@ -732,7 +732,6 @@ ul.no-bullets li:hover {
   }
   .main-img img {
     max-width: 500px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     text-align: center;

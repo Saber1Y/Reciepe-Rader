@@ -70,11 +70,6 @@ async function fetchRecipes() {
     const apiKey = "d7102e3b11405430ed81fb0f2db19233";
     const apiUrl = 'https://api.edamam.com/api/recipes/v2';
     const query = document.getElementById('search').value.trim();
-    // data = {
-    //  q: query,
-    //  app_id:  apiID,
-    //  app_key: apiKey,
-    // }
 
     if (!query) {
       alert('Please enter a food name');
@@ -89,9 +84,11 @@ async function fetchRecipes() {
       throw new Error('Network response failed');
     }
 
+
     const data = await response.json();
-    console.log(data);
-    displayRecipes(data.hits);
+
+    return data;
+
   }
   catch (error) {
     console.error('Error fetching data', error);
