@@ -58,13 +58,15 @@ document.getElementById("get-started-link").addEventListener("click", function (
 });
 
 
-const searchButton = document.getElementById("searchButton");
-const searchIcon = document.getElementById("searchIcon");
-searchButton.addEventListener("click", fetchRecipes);
-searchIcon.addEventListener("click", fetchRecipes);
+// const searchButton = document.getElementById("searchButton");
+// const searchIcon = document.getElementById("searchIcon");
+// searchButton.addEventListener("click", fetchRecipes);
+// searchIcon.addEventListener("click", fetchRecipes);
 
+document.getElementById('recipeForm').addEventListener('submit', fetchRecipes);
 
-async function fetchRecipes() {
+async function fetchRecipes(e) {
+  e.preventDefault();
   try {
     const apiID = "1f3f8a2e";
     const apiKey = "d7102e3b11405430ed81fb0f2db19233";
@@ -86,9 +88,9 @@ async function fetchRecipes() {
 
 
     const data = await response.json();
-
+    console.log(data);
+    displayRecipes(data.hits);
     return data;
-
   }
   catch (error) {
     console.error('Error fetching data', error);
