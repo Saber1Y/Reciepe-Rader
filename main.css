@@ -80,22 +80,17 @@
   text-align: center;
   align-items: center;
   width: 100%;
-  margin: 30px auto;
+  margin: 20px auto;
 }
-
-
 .main-section_row h2 {
   font-family: "DM Sans", sans-serif;
   color: var(--primary--color);
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
-  font-weight: 500;
-  margin: 5px auto;
+  font-weight: 400;
+  padding: 4px;
 }
-/* .main-img {
-  max-width: 500px;
-  width: 100%;
-} */
+
 .main-section > p {
   color: var(--secondary--color);
   margin: 5px auto;
@@ -119,6 +114,9 @@
   transition: all 0.5s;
   cursor: pointer;
   position: relative;
+}
+.main-img {
+  cursor: pointer;
 }
 .btn span {
   cursor: pointer;
@@ -720,8 +718,7 @@ ul.no-bullets li:hover {
   .main-section_row h2 {
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
-    font-size: 63px;
-    /* margin: 0 0; */
+    font-size: 20px;
     padding: 0 0;
     width: 100%;
     align-items: center;
@@ -803,12 +800,14 @@ ul.no-bullets li:hover {
     padding-left: 0;
   }
   .hero-img img {
-    padding: 10px;
-    width: 400px;
+    width: 200px;
   }
   .hero-main {
     margin: 10px auto;
     text-align: center;
+  }
+  .hero-main h2 {
+    font-size: 20px;
   }
   .hero-main p {
     font-family: "Segoe UI";
@@ -834,7 +833,7 @@ ul.no-bullets li:hover {
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
     font-size: 50px;
-    margin-top: 150px;
+    margin: 50px 0;
   }
   .hero-main {
     margin: 10px auto;
